@@ -1,0 +1,40 @@
+#include<iostream>
+#include<string>
+using namespace std;
+class train{
+    private:
+    int train_number;
+    string train_name;
+    string starting_station;
+    string ending_station;
+    string train_type;
+
+    public:
+    void get_data(){
+        cout<<"Enter train number: "<<endl;
+        cin>>train_number;
+        cin.ignore();
+        cout<<"Enter train name: "<<endl;
+        getline(cin, train_name);
+        cout<<"Enter starting station: "<<endl;
+        getline(cin, starting_station);
+        cout<<"Enter ending station: "<<endl;
+        getline(cin, ending_station);
+        cout<<"Enter train type: "<<endl;
+        getline(cin, train_type);
+    };
+
+    void display_info(){
+        cout<<"The Train number is- "<<train_number<<endl;
+        cout<<"The Train name is- "<<train_name<<endl;
+        cout<<"The starting station is- "<<starting_station<<endl;
+        cout<<"The ending station is- "<<starting_station<<endl;
+        cout<<"The Train type is- "<<train_type<<endl;
+    };
+};
+int main(){
+    train obj;
+    obj.get_data();
+    obj.display_info();
+    return 0;
+}
