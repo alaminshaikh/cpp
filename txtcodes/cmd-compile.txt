@@ -7,3 +7,9 @@ For C or C++:
         C++: g++ filename.cpp -o outputname
     Run the output file:
         outputname (on Windows)
+Example: 
+In CMD file name is sum.c
+gcc sum.c -o sum
+
+To run this just write the name in cmd
+sum
