@@ -1,1 +1,9 @@
-dada
+For C or C++:
+
+    Open cmd.
+    Navigate to the folder containing your source code (cd path\to\your\file).
+    Compile the code using GCC or G++:
+        C: gcc filename.c -o outputname
+        C++: g++ filename.cpp -o outputname
+    Run the output file:
+        outputname (on Windows)
