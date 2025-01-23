@@ -1,0 +1,10 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    string input;
+    cout << "Enter a word: ";
+    cin >> input; // Stops at space or newline
+    cout << "You entered: " << input << endl;
+    return 0;
+}
