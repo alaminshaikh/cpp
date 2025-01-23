@@ -28,7 +28,7 @@ class train{
         cout<<"The Train number is- "<<train_number<<endl;
         cout<<"The Train name is- "<<train_name<<endl;
         cout<<"The starting station is- "<<starting_station<<endl;
-        cout<<"The ending station is- "<<starting_station<<endl;
+        cout<<"The ending station is- "<<ending_station<<endl;
         cout<<"The Train type is- "<<train_type<<endl;
     };
 };
