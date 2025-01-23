@@ -1,0 +1,45 @@
+#include <iostream>
+#include <string>
+using namespace std;
+class student{
+    private:
+    string name;
+    int cl;
+    int roll;
+    public:
+    student(string name, int cl, int roll){
+        this->name = name;
+        this->cl = cl;
+        this->roll = roll;
+    }
+    void display(){
+        cout<<"Student name is "<<name<<endl;
+        cout<<"Student class is "<<cl<<endl;
+        cout<<"Student roll number is: "<<roll<<endl;
+    }
+};
+class working_student:public student{
+    private:
+    int salary;
+    string company;
+    public:
+    working_student(string name, int cl, int roll, int salary, string company):student(name, cl, roll){
+        this->salary = salary;
+        this->company = company;
+    }
+    void display(){
+        student::display();
+        cout<<"Company name: "<<company<<endl;
+        cout<<"Salary: "<<salary<<endl;
+    }
+};
+int main(){
+    cout<<"Student constructor"<<endl;
+    student student("Alamin Shaikh",12,3);
+    working_student ws("Alamin Shaikh",12,5,15000,"School");
+    student.display();
+    cout<<"\nWorking student constructor\n";
+    ws.display();
+    system("pause");
+    return 0;
+}
