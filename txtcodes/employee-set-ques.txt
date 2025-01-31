@@ -1,0 +1,38 @@
+#include<iostream>
+using namespace std;
+class Employee{
+	private:
+		int Employee_id;
+		string Employee_name;
+		string Designation;
+		string Employee_Department;
+		int Years_Experience;
+	public:
+		void get_input(){
+			cout<<"Enter employee id: "<<endl;
+			cin>>Employee_id;
+			cin.ignore();
+			cout<<"Enter employee name: "<<endl;
+			getline(cin,Employee_name);
+			cout<<"Enter employee designation: "<<endl;
+			getline(cin,Designation);
+			cout<<"Enter employee department: "<<endl;
+			getline(cin,Employee_Department);
+			cout<<"Enter employee years of experience: "<<endl;
+			cin>>Years_Experience;
+		}
+		void display_info(){
+			cout<<"\nDisplaying Employee Details:"<<endl;
+			cout<<"Employee id is : "<<Employee_id<<endl;
+			cout<<"Employee name is : "<<Employee_name<<endl;
+			cout<<"Employee designation is : "<<Designation<<endl;
+			cout<<"Employee department is : "<<Employee_Department<<endl;
+			cout<<"Employee years of experience is : "<<Years_Experience<<endl;
+		}
+};
+int main(){
+	Employee obj;
+	obj.get_input();
+	obj.display_info();
+	return 0;
+}
